@@ -648,31 +648,42 @@
 	},
 	"file_history":
 	[
+		"/home/guda/manage/README.rdoc",
+		"/home/guda/manage/Gemfile",
+		"/home/guda/manage/manage.gemspec",
+		"/home/guda/manage/lib/manage/version.rb",
+		"/home/guda/manage/app/controllers/manage/sessions_controller.rb",
+		"/home/guda/manage/app/controllers/manage/application_controller.rb",
+		"/home/guda/manage/app/controllers/manage/admin_users_controller.rb",
+		"/home/guda/manage/app/views/manage/resource/_index.html.slim",
+		"/home/guda/manage/app/views/manage/resource/index.html.slim",
+		"/home/guda/manage/app/views/layouts/manage/_main_menu.html.slim",
+		"/home/guda/manage/app/views/manage/admin_users/_form.html.slim",
+		"/home/guda/manage/app/views/manage/admin_user/_form.html.slim",
+		"/home/guda/manage/config/routes.rb",
+		"/home/guda/manage/app/controllers/manage/resource_controller.rb",
+		"/home/guda/manage/app/views/layouts/manage/application.html.slim",
+		"/home/guda/manage/app/views/sessions/new.html.slim",
+		"/home/guda/manage/app/controllers/manage/dashboards_controller.rb",
+		"/home/guda/manage/app/views/layouts/manage/sign_in.html.slim",
+		"/home/guda/manage/test/dummy/config/application.rb",
+		"/home/guda/manage/manage",
 		"/home/guda/manage/lib/manage/engine.rb",
 		"/home/guda/app/manage/controllers/responder.rb",
-		"/home/guda/manage/app/controllers/manage/dashboards_controller.rb",
 		"/home/guda/manage/controllers/responder.rb",
 		"/home/guda/manage/lib/responder.rb",
-		"/home/guda/manage/app/controllers/manage/application_controller.rb",
-		"/home/guda/manage/manage.gemspec",
 		"/home/guda/manage/lib/manage.rb",
 		"/home/guda/manage/lib/respodner.rb",
 		"/home/guda/manage/lib/responer.rb",
-		"/home/guda/manage/config/routes.rb",
 		"/home/guda/manage/app/helpers/manage/resource_helper.rb",
 		"/home/guda/manage/app/views/manage/resource/_form.html.slim",
 		"/home/guda/manage/app/views/manage/resource/new.html.slim",
 		"/home/guda/manage/app/views/manage/resource/edit.html.slim",
-		"/home/guda/manage/app/views/manage/resource/_index.html.slim",
-		"/home/guda/manage/app/views/manage/resource/index.html.slim",
-		"/home/guda/manage/app/controllers/manage/resource_controller.rb",
 		"/home/guda/manage/app/lib/responer.rb",
 		"/home/guda/manage/app/controllers/manage/responer.rb",
 		"/home/guda/manage/app/views/manage/resource/show.html.slim",
-		"/home/guda/manage/app/views/layouts/manage/application.html.slim",
 		"/home/guda/manage/app/views/layouts/manage/application.html.erb",
 		"/home/guda/manage/app/controllers/manage/dashboard_controller.rb",
-		"/home/guda/manage/Gemfile",
 		"/home/guda/boardeaser/app/models/agenda/state.rb",
 		"/home/guda/boardeaser/app/views/layouts/application.html.slim",
 		"/home/guda/boardeaser/app/views/agendas/new.html.slim",
@@ -764,18 +775,7 @@
 		"/home/guda/boardeaser/app/views/agendas/send_suggestions.html.slim",
 		"/home/guda/boardeaser/app/controllers/registrations_controller.rb",
 		"/home/guda/boardeaser/config/environments/development.rb",
-		"/home/guda/boardeaser/config/initializers/switch_user.rb",
-		"/home/guda/boardeaser/app/views/agendas/_minutes_fields.html.slim",
-		"/home/guda/boardeaser/app/views/agendas/_adjuster_minutes_fields.html.slim",
-		"/home/guda/boardeaser/app/models/company_switcher.rb",
-		"/home/guda/boardeaser/app/controllers/home_controller.rb",
-		"/home/guda/boardeaser/app/views/shared/_flash.html.slim",
-		"/home/guda/boardeaser/app/views/layouts/boxed.html.slim",
-		"/home/guda/boardeaser/app/views/layouts/external.html.slim",
-		"/home/guda/boardeaser/app/admin/dashboard.rb",
-		"/home/guda/boardeaser/app/models/minute.rb",
-		"/home/guda/boardeaser/app/models/invoice.rb",
-		"/home/guda/boardeaser/app/controllers/documents_controller.rb"
+		"/home/guda/boardeaser/config/initializers/switch_user.rb"
 	],
 	"find":
 	{
@@ -1015,20 +1015,52 @@
 		"selected_items":
 		[
 			[
+				"readm",
+				"README.rdoc"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"gemsp",
+				"manage.gemspec"
+			],
+			[
+				"vers",
+				"lib/manage/version.rb"
+			],
+			[
 				"gemspec",
 				"manage.gemspec"
+			],
+			[
+				"main",
+				"app/views/layouts/manage/_main_menu.html.slim"
+			],
+			[
+				"readme",
+				"README.rdoc"
+			],
+			[
+				"appplication.html",
+				"app/views/layouts/manage/application.html.slim"
 			],
 			[
 				"routes",
 				"config/routes.rb"
 			],
 			[
-				"man",
-				"manage.gemspec"
+				"applica",
+				"test/dummy/config/application.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
+				"read",
+				"README.rdoc"
+			],
+			[
+				"man",
+				"manage.gemspec"
 			],
 			[
 				"manage.rb",
@@ -1093,10 +1125,6 @@
 			[
 				"companies_help",
 				"app/helpers/companies_helper.rb"
-			],
-			[
-				"readme",
-				"doc/README_FOR_APP"
 			],
 			[
 				"schema",
@@ -1233,10 +1261,6 @@
 			[
 				"prase",
 				"phrase/locales/phrase.en.yml"
-			],
-			[
-				"applica",
-				"app/helpers/application_helper.rb"
 			],
 			[
 				"subs",
@@ -1459,10 +1483,6 @@
 				"app/models/minute.rb"
 			],
 			[
-				"read",
-				"doc/README_FOR_APP"
-			],
-			[
 				"produc",
 				"config/environments/production.rb"
 			],
@@ -1505,26 +1525,6 @@
 			[
 				"bootstrap.",
 				"lib/tasks/bootstrap.rake"
-			],
-			[
-				"addtrial",
-				"db/migrate/20130620070749_add_trial_subscriptions_to_not_subscribed_companies.rb"
-			],
-			[
-				"add",
-				"db/migrate/20130505172602_add_agenda_uniq_number.rb"
-			],
-			[
-				"compshow",
-				"app/views/companies/show.html.slim"
-			],
-			[
-				"compancon",
-				"app/controllers/companies_controller.rb"
-			],
-			[
-				"users",
-				"app/controllers/users_controller.rb"
 			]
 		],
 		"width": 0.0
