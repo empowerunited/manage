@@ -1,0 +1,25 @@
+bg:
+  manage:
+    actions:
+      show: Покажи
+      new: Създай %{model}
+      edit: Редакция
+      destroy: Изтрии
+      index: Списък с %{model}
+    edit:
+      title: Редактирай %{model}
+    new:
+      title: Създаване на %{model}
+    confirmations:
+      Are you sure: Шуре ли сте?
+  flash:
+    actions:
+      create:
+        notice: 'Създадохме %{resource_name}'
+        alert: 'Не успешно създаване на %{resource_name}'
+      update:
+        notice: 'Обновихме %{resource_name}.'
+        alert: 'Не успешно обновяване на %{resource_name}'
+      destroy:
+        notice: 'Изтрихме %{resource_name}'
+        alert: 'Неуспешно изтриване на %{resource_name}'

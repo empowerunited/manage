@@ -1,0 +1,21 @@
+en:
+  manage:
+    actions:
+      show: Show
+      edit: Edit
+      destroy: Delete
+    edit:
+      title: Edit %{model}
+    confirmations:
+      Are you sure: Are you sure?
+  flash:
+    actions:
+      create:
+        notice: '%{resource_name} was successfully created.'
+        alert: '%{resource_name} could not be created.'
+      update:
+        notice: '%{resource_name} was successfully updated.'
+        alert: '%{resource_name} could not be updated.'
+      destroy:
+        notice: '%{resource_name} was successfully destroyed.'
+        alert: '%{resource_name} could not be destroyed.'

@@ -1,0 +1,7 @@
+h2 = t('manage.edit.title', model: resource_class.model_name.human)
+
+nav
+  / = link_to 'index', collection_url
+  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class
+
+= render "form", attributes: attributes

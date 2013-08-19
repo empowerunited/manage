@@ -1,0 +1,1554 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"next",
+				"next_step_name"
+			],
+			[
+				"ad",
+				"adjustment_made"
+			],
+			[
+				"curr",
+				"current_action"
+			],
+			[
+				"ac",
+				"action_name"
+			],
+			[
+				"send",
+				"send_suggestions"
+			],
+			[
+				"invitatio",
+				"invitations"
+			],
+			[
+				"member",
+				"membership"
+			],
+			[
+				"sub",
+				"subscription"
+			],
+			[
+				"su",
+				"subscription"
+			],
+			[
+				"subs",
+				"subscribtion_count"
+			],
+			[
+				"current_",
+				"current_company"
+			],
+			[
+				"email",
+				"email_placeholder"
+			],
+			[
+				"notif",
+				"notification"
+			],
+			[
+				"notificat",
+				"notifications"
+			],
+			[
+				"noti",
+				"notification"
+			],
+			[
+				"поте",
+				"потребителя"
+			],
+			[
+				"dele",
+				"deleted_at"
+			],
+			[
+				"del",
+				"deleted_user_ids"
+			],
+			[
+				"get",
+				"get_selected_users"
+			],
+			[
+				"ip",
+				"last_sign_in_ip"
+			],
+			[
+				"search",
+				"search_field"
+			],
+			[
+				"ver",
+				"verified"
+			],
+			[
+				"rull",
+				"rulls_eq"
+			],
+			[
+				"last_",
+				"last_sign_in_at"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"Pu",
+				"PublicationMailer"
+			],
+			[
+				"first",
+				"first_name"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"git: log",
+				"Git: Log Current File"
+			],
+			[
+				"gitg",
+				"Git: Graph Current File"
+			],
+			[
+				"git bla",
+				"Git: Blame"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			],
+			[
+				"git commit",
+				"Git: Commit history"
+			],
+			[
+				"git comm",
+				"Git: Commit history"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git com",
+				"Git: Commit history"
+			],
+			[
+				"git hi",
+				"Git: Commit history"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"diff",
+				"Git: Diff Current File"
+			],
+			[
+				"git",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"qc",
+				"Git: Quick Commit"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"",
+				"API-Completion-Package: Open Github project url"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"glc",
+				"Git: Log Current File"
+			],
+			[
+				"check",
+				"Git: Checkout Current File"
+			],
+			[
+				"git checkout",
+				"Git: Checkout Current File"
+			],
+			[
+				"remove pc",
+				"Package Control: Remove Package"
+			],
+			[
+				"git checkou",
+				"Git: Checkout Current File"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git gui",
+				"Git: Gui"
+			],
+			[
+				"commit",
+				"Git: Commit"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"todo",
+				"Coffee: Goto Definition"
+			],
+			[
+				"sssli",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"sssl",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"ssslim",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"ssless",
+				"Set Syntax: LESS"
+			],
+			[
+				"packain",
+				"Package Control: Install Package"
+			],
+			[
+				"sssc",
+				"Set Syntax: SCSS"
+			],
+			[
+				"git check",
+				"Git: Checkout Current File"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"settig",
+				"Preferences: Settings - User"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"packadi",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa pac",
+				"Package Control: Disable Package"
+			],
+			[
+				"dispa",
+				"Package Control: Disable Package"
+			],
+			[
+				"disap",
+				"Package Control: Disable Package"
+			],
+			[
+				"diapack",
+				"Package Control: Disable Package"
+			],
+			[
+				"packaged",
+				"Package Control: Disable Package"
+			],
+			[
+				"pref",
+				"Preferences: Settings - Default"
+			],
+			[
+				"dipa",
+				"Package Control: Disable Package"
+			],
+			[
+				"disable",
+				"SublimeCodeIntel: Disable Plugin"
+			],
+			[
+				"sss",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"gitdiff",
+				"Git: Diff All"
+			],
+			[
+				"disab",
+				"Package Control: Disable Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"packagedi",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: directory()"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"packager",
+				"Package Control: Remove Package"
+			],
+			[
+				"insa",
+				"Package Control: Install Package"
+			],
+			[
+				"gidif",
+				"Git: Diff Current File"
+			],
+			[
+				"gibla",
+				"Git: Blame"
+			],
+			[
+				"gitb",
+				"Git: Blame"
+			],
+			[
+				"setssl",
+				"Set Syntax: Ruby Slim"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssr",
+				"Set Syntax: Ruby"
+			],
+			[
+				"gitcheck",
+				"Git: Checkout Current File"
+			],
+			[
+				"gitchec",
+				"Git: Checkout Current File"
+			],
+			[
+				"git grap",
+				"Git: Graph Current File"
+			],
+			[
+				"quick",
+				"Git: Quick Commit"
+			],
+			[
+				"gitdif",
+				"Git: Diff Current File"
+			],
+			[
+				"quic",
+				"Git: Quick Commit"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"gitcom",
+				"Git: Commit"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"gitgui",
+				"Git: Gui"
+			],
+			[
+				"gitgu",
+				"Git: Gui"
+			],
+			[
+				"gicheck",
+				"Git: Checkout Current File"
+			],
+			[
+				"gidf",
+				"Git: Diff Current File"
+			],
+			[
+				"gitlog",
+				"Git: Log Current File"
+			],
+			[
+				"gitgra",
+				"Git: Graph All"
+			],
+			[
+				"gitgrap",
+				"Git: Graph All"
+			],
+			[
+				"giad",
+				"Git: Add..."
+			],
+			[
+				"packr",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search from Input"
+			],
+			[
+				"log",
+				"Git: Log All"
+			],
+			[
+				"GIT",
+				"Set Syntax: Git Graph"
+			],
+			[
+				"gic",
+				"Git: Commit"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"gsta",
+				"Git: Stash Apply"
+			],
+			[
+				"gc",
+				"Git: Commit"
+			],
+			[
+				"gacf",
+				"Git: Add Current File"
+			],
+			[
+				"gis",
+				"Git: Status"
+			],
+			[
+				"gad",
+				"Git: Add Current File"
+			],
+			[
+				"gitad",
+				"Git: Add..."
+			],
+			[
+				"gitc",
+				"Git: Commit"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"gb",
+				"Git: Blame"
+			],
+			[
+				"gbl",
+				"Git: Blame"
+			],
+			[
+				"gcom",
+				"Git: Commit"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"gib",
+				"Git: Blame"
+			],
+			[
+				"gitbl",
+				"Git: Blame"
+			],
+			[
+				"gid",
+				"Git: Diff All"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"packagei",
+				"Package Control: Install Package"
+			],
+			[
+				"gitdi",
+				"Git: Diff Current File"
+			],
+			[
+				"gita",
+				"Git: Add Current File"
+			],
+			[
+				"git: ad",
+				"Git: Add Current File"
+			],
+			[
+				"gs",
+				"Git: Status"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ssy",
+				"Set Syntax: YAML"
+			],
+			[
+				"cover",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"packag",
+				"Package Control: Install Package"
+			],
+			[
+				"ctag",
+				"CTags: Show Symbols (all)"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby on Rails"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 324.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/guda/manage/lib/manage/engine.rb",
+		"/home/guda/app/manage/controllers/responder.rb",
+		"/home/guda/manage/app/controllers/manage/dashboards_controller.rb",
+		"/home/guda/manage/controllers/responder.rb",
+		"/home/guda/manage/lib/responder.rb",
+		"/home/guda/manage/app/controllers/manage/application_controller.rb",
+		"/home/guda/manage/manage.gemspec",
+		"/home/guda/manage/lib/manage.rb",
+		"/home/guda/manage/lib/respodner.rb",
+		"/home/guda/manage/lib/responer.rb",
+		"/home/guda/manage/config/routes.rb",
+		"/home/guda/manage/app/helpers/manage/resource_helper.rb",
+		"/home/guda/manage/app/views/manage/resource/_form.html.slim",
+		"/home/guda/manage/app/views/manage/resource/new.html.slim",
+		"/home/guda/manage/app/views/manage/resource/edit.html.slim",
+		"/home/guda/manage/app/views/manage/resource/_index.html.slim",
+		"/home/guda/manage/app/views/manage/resource/index.html.slim",
+		"/home/guda/manage/app/controllers/manage/resource_controller.rb",
+		"/home/guda/manage/app/lib/responer.rb",
+		"/home/guda/manage/app/controllers/manage/responer.rb",
+		"/home/guda/manage/app/views/manage/resource/show.html.slim",
+		"/home/guda/manage/app/views/layouts/manage/application.html.slim",
+		"/home/guda/manage/app/views/layouts/manage/application.html.erb",
+		"/home/guda/manage/app/controllers/manage/dashboard_controller.rb",
+		"/home/guda/manage/Gemfile",
+		"/home/guda/boardeaser/app/models/agenda/state.rb",
+		"/home/guda/boardeaser/app/views/layouts/application.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/new.html.slim",
+		"/home/guda/boardeaser/app/models/agenda.rb",
+		"/home/guda/boardeaser/app/views/agendas/_dates_form.html.slim",
+		"/home/guda/boardeaser/config/routes.rb",
+		"/home/guda/boardeaser/app/helpers/agendas_helper.rb",
+		"/home/guda/boardeaser/app/views/agendas/_form.html.slim",
+		"/home/guda/old_legacy_code.rdoc",
+		"/home/guda/boardeaser/agendas_controller.rb",
+		"/home/guda/boardeaser/app/helpers/application_helper.rb",
+		"/home/guda/boardeaser/app/views/agendas/basic_data.html.slim",
+		"/home/guda/boardeaser/app/assets/javascripts/agendas.js.coffee",
+		"/home/guda/shits.rdoc",
+		"/home/guda/boardeaser/app/views/agendas/_suggestion_fields.html.slim",
+		"/home/guda/boardeaser/app/helpers/companies_helper.rb",
+		"/home/guda/boardeaser/app/views/companies/show.html.slim",
+		"/home/guda/boardeaser/app/views/agendas_old/_navigation.html.slim",
+		"/media/guda/Guda_3/guda/kurva/logic.uc2",
+		"/home/guda/boardeaser/config/locales/en.yml",
+		"/home/guda/boardeaser/app/controllers/agendas_controller.rb",
+		"/home/guda/boardeaser/app/views/agendas/_navigation.html.slim",
+		"/home/guda/boardeaser/Gemfile",
+		"/home/guda/boardeaser/doc/README_FOR_APP",
+		"/home/guda/boardeaser/db/schema.rb",
+		"/home/guda/boardeaser/db/migrate/20130816175856_remove_default_agenda_status.rb",
+		"/home/guda/boardeaser/db/migrate/20130626114748_remove_amount_from_invoice.rb",
+		"/home/guda/yatoto/app/models/concerns/user/state.rb",
+		"/home/guda/yatoto/app/models/user.rb",
+		"/home/guda/%F",
+		"/home/guda/boardeaser/app/views/agendas/write_notes.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/add_minutes.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/_present_fields.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/edit.html.slim",
+		"/home/guda/boardeaser/app/models/membership.rb",
+		"/home/guda/boardeaser/app/models/company.rb",
+		"/home/guda/boardeaser/app/models/user.rb",
+		"/home/guda/boardeaser/app/views/users/edit.html.slim",
+		"/home/guda/boardeaser/app/views/users/index.html.slim",
+		"/home/guda/boardeaser/app/controllers/users_controller.rb",
+		"/home/guda/boardeaser/db/migrate/20130814183113_migrate_admin_roles_intoflags.rb",
+		"/home/guda/boardeaser/db/migrate/20130214203357_create_admin_notes.rb",
+		"/home/guda/boardeaser/db/migrate/20120924113026_add_devise_to_users.rb",
+		"/home/guda/boardeaser/db/migrate/20130814165107_add_trackable_to_user.rb",
+		"/home/guda/boardeaser/config/initializers/devise.rb",
+		"/home/guda/boardeaser/app/admin/companies.rb",
+		"/home/guda/boardeaser/app/admin/users.rb",
+		"/home/guda/boardeaser/app/admin/admin_user.rb",
+		"/home/guda/boardeaser/app/controllers/application_controller.rb",
+		"/home/guda/boardeaser/app/admin/subscription.rb",
+		"/home/guda/boardeaser/app/views/companies/edit.html.slim",
+		"/home/guda/boardeaser/app/models/subscription.rb",
+		"/home/guda/boardeaser/app/controllers/companies_controller.rb",
+		"/home/guda/boardeaser/app/views/companies/index.html.slim",
+		"/home/guda/boardeaser/db/migrate/20130812195449_add_completed_to_invoices.rb",
+		"/home/guda/boardeaser/db/migrate/20130617070520_create_subscriptions.rb",
+		"/home/guda/boardeaser/db/migrate/20130704170029_add_trial_to_plan.rb",
+		"/home/guda/boardeaser/app/models/plan.rb",
+		"/home/guda/boardeaser/lib/tasks/bootstrap.rake",
+		"/home/guda/boardeaser/phrase/locales/phrase.en.yml",
+		"/home/guda/boardeaser/app/controllers/crons_controller.rb",
+		"/home/guda/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/guda/.config/sublime-text-2/Packages/User/sublime-API-Completions-Package.sublime-settings",
+		"/home/guda/boardeaser/app/views/devise/registrations/edit.html.slim",
+		"/home/guda/boardeaser/app/views/devise/registrations/new.html.slim",
+		"/home/guda/boardeaser/config/initializers/simple_form.rb",
+		"/home/guda/boardeaser/phrase/locales/phrase.sv.yml",
+		"/home/guda/bin/merge_yml.rb",
+		"/tmp/en.yml",
+		"/home/guda/Downloads/sv (1).yml",
+		"/home/guda/boardeaser/config/locales/sv.yml",
+		"/home/guda/boardeaser/config/locales/simple_form.en.yml",
+		"/home/guda/boardeaser/config/locales/simple_form.sv.yml",
+		"/home/guda/Downloads/simple_form.sv.yml",
+		"/home/guda/Downloads/devise.sv.yml",
+		"/home/guda/boardeaser/config/locales/devise.en.yml",
+		"/home/guda/boardeaser/config/locales/devise.sv.yml",
+		"/home/guda/boardeaser/app/views/agendas/prepare_invitations.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/_invitation_form.html.slim",
+		"/home/guda/boardeaser/app/models/invitation.rb",
+		"/home/guda/boardeaser/app/views/agendas/_invite_external_form.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/index.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/adjust.html.slim",
+		"/home/guda/boardeaser/app/admin/invitations.rb",
+		"/home/guda/boardeaser/db/migrate/20130811143140_organization_number_to_string.rb",
+		"/home/guda/boardeaser/db/migrate/20130627140712_add_organization_number_to_company.rb",
+		"/home/guda/boardeaser/app/views/home/dashboard.html.slim",
+		"/home/guda/boardeaser/app/assets/javascripts/application.js",
+		"/home/guda/boardeaser/app/views/agendas/send_suggestions.html.slim",
+		"/home/guda/boardeaser/app/controllers/registrations_controller.rb",
+		"/home/guda/boardeaser/config/environments/development.rb",
+		"/home/guda/boardeaser/config/initializers/switch_user.rb",
+		"/home/guda/boardeaser/app/views/agendas/_minutes_fields.html.slim",
+		"/home/guda/boardeaser/app/views/agendas/_adjuster_minutes_fields.html.slim",
+		"/home/guda/boardeaser/app/models/company_switcher.rb",
+		"/home/guda/boardeaser/app/controllers/home_controller.rb",
+		"/home/guda/boardeaser/app/views/shared/_flash.html.slim",
+		"/home/guda/boardeaser/app/views/layouts/boxed.html.slim",
+		"/home/guda/boardeaser/app/views/layouts/external.html.slim",
+		"/home/guda/boardeaser/app/admin/dashboard.rb",
+		"/home/guda/boardeaser/app/models/minute.rb",
+		"/home/guda/boardeaser/app/models/invoice.rb",
+		"/home/guda/boardeaser/app/controllers/documents_controller.rb"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"",
+			"*.yml",
+			"yml",
+			"yaml",
+			"",
+			"*.less",
+			"",
+			"*.less",
+			"",
+			"-mocks2",
+			"",
+			"-mocks2",
+			"-mock",
+			"^mock",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"responders",
+			"basic_data",
+			"navigation_link",
+			"tab_data",
+			"def save_agenda_buttons",
+			".time_decided_fields",
+			"invisible_decision",
+			"\nWe have already decided on a time",
+			"def new",
+			"time_decided",
+			"@update_properties",
+			"is_updated",
+			"def time_decided?",
+			"time_decided?",
+			"agenda,",
+			"navigation_classes",
+			"tab_state",
+			"= render 'dates_form'",
+			"current_page?",
+			".activerecord.attributes.agenda.states.",
+			"invitations",
+			"invitations sen",
+			"invitations sent",
+			"prepare_notes",
+			"notes_made",
+			"invitations_sent",
+			"status_sent",
+			"agenda",
+			"date_and_time",
+			"time",
+			"fixed",
+			"enter_minutes",
+			"created",
+			"status",
+			"default",
+			"STATUS",
+			"STATUS_ID",
+			"STATUSES",
+			"state",
+			"status",
+			"state",
+			"update",
+			":user",
+			"agenda",
+			"write_",
+			"step",
+			"Edit minutes",
+			"navigation_link",
+			"write_",
+			"save_agenda_buttons",
+			"present_fields",
+			"no_invitations_msg",
+			"There are no invitations for this meeting",
+			"cannot choose secretary and adjuster",
+			"cannot choose secretary and adjuster.",
+			"ou cannot choose secretary and adjuster.",
+			"There are no invitations for this meeting, you cannot choose secretary and adjuster.",
+			"confirm",
+			"nested_attr",
+			"admin",
+			"form_for",
+			"form_form",
+			"membership = membership_for(company)",
+			"membership_for",
+			"self.memberships.where(company_id: company.id, user_id: self.id).first",
+			"company_role",
+			".company_role",
+			"update_company_role",
+			"role",
+			"manager",
+			"user",
+			"admin",
+			"users",
+			"approve",
+			"I approve",
+			"account_status",
+			"days remaining",
+			"normal_subscribtion_end_dates",
+			"subscrib",
+			"current_subscription",
+			"sub",
+			"last",
+			"company_admin",
+			"remove_trial_from_company",
+			"Subscription.subscribe",
+			"sub",
+			"year_by_year",
+			"Your payment has to be approved before ordering more subscriptions",
+			"sttatus",
+			"remove_trial_from_company",
+			"def current_plan_badge",
+			"Trial",
+			"companies",
+			"subscri",
+			"subscriptions_count",
+			"company_su",
+			"subs",
+			"update_invoice",
+			"None",
+			"trial",
+			"trial = false",
+			"trial",
+			"current_subscription",
+			"current_status_button",
+			"subscribe_trial",
+			"trial",
+			"trial?",
+			"subscribtion.active",
+			"freez",
+			"free",
+			"wrappers",
+			"wrapper",
+			"terms\")",
+			"I agree",
+			"terms",
+			"application",
+			"No outside users invited.",
+			"reg",
+			"Suppleant",
+			"membership",
+			"create_invitation",
+			"invitation",
+			"agendas.present",
+			"Present members",
+			"send_invitat",
+			"adjust",
+			"def update",
+			"navigation_minutes"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+			"control-label",
+			"",
+			"sublime"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 311.0
+	},
+	"output.find_results":
+	{
+		"height": 144.0
+	},
+	"output.git":
+	{
+		"height": 150.0
+	},
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gemspec",
+				"manage.gemspec"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"man",
+				"manage.gemspec"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"manage.rb",
+				"lib/manage.rb"
+			],
+			[
+				"manage",
+				"manage.gemspec"
+			],
+			[
+				"agendas_he",
+				"app/helpers/agendas_helper.rb"
+			],
+			[
+				"state",
+				"app/models/agenda/state.rb"
+			],
+			[
+				"agenda",
+				"app/models/agenda.rb"
+			],
+			[
+				"routs",
+				"config/routes.rb"
+			],
+			[
+				"agendas",
+				"agendas_controller.rb"
+			],
+			[
+				"agendas_con",
+				"app/controllers/agendas_controller.rb"
+			],
+			[
+				"agendas_h",
+				"app/helpers/agendas_helper.rb"
+			],
+			[
+				"application",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"roues",
+				"config/routes.rb"
+			],
+			[
+				"_dates_",
+				"app/views/agendas/_dates_form.html.slim"
+			],
+			[
+				"application_h",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"agendas_c",
+				"app/controllers/agendas_controller.rb"
+			],
+			[
+				"en",
+				"config/locales/en.yml"
+			],
+			[
+				"companies_help",
+				"app/helpers/companies_helper.rb"
+			],
+			[
+				"readme",
+				"doc/README_FOR_APP"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"remove",
+				"db/migrate/20130816175856_remove_default_agenda_status.rb"
+			],
+			[
+				"show.html",
+				"app/views/companies/show.html.slim"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"write_note",
+				"app/views/agendas/write_notes.html.slim"
+			],
+			[
+				"migrate_ad",
+				"db/migrate/20130814183113_migrate_admin_roles_intoflags.rb"
+			],
+			[
+				"migrate_admin",
+				"db/migrate/20130214203357_create_admin_notes.rb"
+			],
+			[
+				"users_con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"members",
+				"app/models/membership.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"en.",
+				"config/locales/en.yml"
+			],
+			[
+				"usersinde",
+				"app/views/users/index.html.slim"
+			],
+			[
+				"company",
+				"app/models/company.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"add__",
+				"db/migrate/20120924113026_add_devise_to_users.rb"
+			],
+			[
+				"admin_",
+				"app/admin/admin_user.rb"
+			],
+			[
+				"adminuse",
+				"app/admin/users.rb"
+			],
+			[
+				"adminuser",
+				"app/admin/admin_user.rb"
+			],
+			[
+				"subsc",
+				"app/models/subscription.rb"
+			],
+			[
+				"sub",
+				"app/admin/subscription.rb"
+			],
+			[
+				"admincomp",
+				"app/admin/companies.rb"
+			],
+			[
+				"adminsub",
+				"app/admin/subscription.rb"
+			],
+			[
+				"compan",
+				"app/models/company.rb"
+			],
+			[
+				"indx",
+				"app/views/users/index.html.slim"
+			],
+			[
+				"companinde",
+				"app/views/companies/index.html.slim"
+			],
+			[
+				"mem",
+				"app/models/membership.rb"
+			],
+			[
+				"applicatihe",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"invoices",
+				"db/migrate/20130812195449_add_completed_to_invoices.rb"
+			],
+			[
+				"applcation_",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"boots",
+				"lib/tasks/bootstrap.rake"
+			],
+			[
+				"plan",
+				"app/models/plan.rb"
+			],
+			[
+				"companedi",
+				"app/views/companies/edit.html.slim"
+			],
+			[
+				"comp",
+				"app/models/company.rb"
+			],
+			[
+				"prase",
+				"phrase/locales/phrase.en.yml"
+			],
+			[
+				"applica",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"subs",
+				"app/models/subscription.rb"
+			],
+			[
+				"crons",
+				"app/controllers/crons_controller.rb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"simple",
+				"config/initializers/simple_form.rb"
+			],
+			[
+				"regied",
+				"app/views/devise/registrations/edit.html.slim"
+			],
+			[
+				"pha",
+				"phrase/locales/phrase.sv.yml"
+			],
+			[
+				"companiessho",
+				"app/views/companies/show.html.slim"
+			],
+			[
+				"_invi",
+				"app/views/agendas/_invitation_form.html.slim"
+			],
+			[
+				"invit",
+				"app/models/invitation.rb"
+			],
+			[
+				"invi",
+				"app/admin/invitations.rb"
+			],
+			[
+				"invite_exte",
+				"app/views/agendas/_invite_external_form.html.slim"
+			],
+			[
+				"prepare",
+				"app/views/agendas/prepare_invitations.html.slim"
+			],
+			[
+				"organ",
+				"db/migrate/20130811143140_organization_number_to_string.rb"
+			],
+			[
+				"orga",
+				"db/migrate/20130627140712_add_organization_number_to_company.rb"
+			],
+			[
+				"compa",
+				"app/models/company.rb"
+			],
+			[
+				"add_min",
+				"app/views/agendas/add_minutes.html.slim"
+			],
+			[
+				"navi",
+				"app/views/agendas/_navigation.html.slim"
+			],
+			[
+				"companshow",
+				"app/views/companies/show.html.slim"
+			],
+			[
+				"agendaind",
+				"app/views/agendas/index.html.slim"
+			],
+			[
+				"compainde",
+				"app/views/companies/index.html.slim"
+			],
+			[
+				"_dates_form",
+				"app/views/agendas/_dates_form.html.slim"
+			],
+			[
+				"agendasedit",
+				"app/views/agendas/edit.html.slim"
+			],
+			[
+				"sugge",
+				"app/views/agendas/_suggestion_fields.html.slim"
+			],
+			[
+				"edit",
+				"app/views/agendas/edit.html.slim"
+			],
+			[
+				"_sugge",
+				"app/views/agendas/_suggestion_fields.html.slim"
+			],
+			[
+				"schea",
+				"db/schema.rb"
+			],
+			[
+				"invita",
+				"app/models/invitation.rb"
+			],
+			[
+				"member",
+				"app/models/membership.rb"
+			],
+			[
+				"navia",
+				"app/views/agendas/_navigation.html.slim"
+			],
+			[
+				"add_mi",
+				"app/views/agendas/add_minutes.html.slim"
+			],
+			[
+				"agendas_",
+				"app/controllers/agendas_controller.rb"
+			],
+			[
+				"registra",
+				"app/controllers/registrations_controller.rb"
+			],
+			[
+				"registnew",
+				"app/views/devise/registrations/new.html.slim"
+			],
+			[
+				"development",
+				"config/environments/development.rb"
+			],
+			[
+				"switch",
+				"config/initializers/switch_user.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"cron",
+				"app/controllers/crons_controller.rb"
+			],
+			[
+				"agendacon",
+				"app/controllers/agendas_controller.rb"
+			],
+			[
+				"usersedit",
+				"app/views/users/edit.html.slim"
+			],
+			[
+				"swith",
+				"config/initializers/switch_user.rb"
+			],
+			[
+				"home",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"_flash",
+				"app/views/shared/_flash.html.slim"
+			],
+			[
+				"application.html.s",
+				"app/views/layouts/application.html.slim"
+			],
+			[
+				"dashbo",
+				"app/views/home/dashboard.html.slim"
+			],
+			[
+				"compansw",
+				"app/models/company_switcher.rb"
+			],
+			[
+				"point",
+				"app/models/point.rb"
+			],
+			[
+				"subscri",
+				"app/models/subscription.rb"
+			],
+			[
+				"invoice",
+				"app/models/invoice.rb"
+			],
+			[
+				"application_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"companies_con",
+				"app/controllers/companies_controller.rb"
+			],
+			[
+				"users_cont",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"development.rb",
+				"config/environments/development.rb"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"age",
+				"app/models/agenda.rb"
+			],
+			[
+				"minute",
+				"app/models/minute.rb"
+			],
+			[
+				"read",
+				"doc/README_FOR_APP"
+			],
+			[
+				"produc",
+				"config/environments/production.rb"
+			],
+			[
+				"rake",
+				"Rakefile"
+			],
+			[
+				"migra",
+				"db/migrate/20120415134641_add_fields_to_minutes.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"databa",
+				"config/database.yml"
+			],
+			[
+				"schema.r",
+				"db/schema.rb"
+			],
+			[
+				"application.js",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"schema.rb",
+				"db/schema.rb"
+			],
+			[
+				"subscrion",
+				"app/models/subscription.rb"
+			],
+			[
+				"addacti",
+				"db/migrate/20130626100831_add_active_to_subscription.rb"
+			],
+			[
+				"bootstrap.",
+				"lib/tasks/bootstrap.rake"
+			],
+			[
+				"addtrial",
+				"db/migrate/20130620070749_add_trial_subscriptions_to_not_subscribed_companies.rb"
+			],
+			[
+				"add",
+				"db/migrate/20130505172602_add_agenda_uniq_number.rb"
+			],
+			[
+				"compshow",
+				"app/views/companies/show.html.slim"
+			],
+			[
+				"compancon",
+				"app/controllers/companies_controller.rb"
+			],
+			[
+				"users",
+				"app/controllers/users_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/guda/manage/manage.sublime-workspace"
+			],
+			[
+				"cl",
+				"/home/guda/club50plus/club50plus.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 362.0,
+	"status_bar_visible": true
+}

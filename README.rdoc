@@ -1,0 +1,59 @@
+= Manage
+
+Admin backend based on http://iain.nl/backends-in-rails-3-1
+
+== Installing
+
+Add the engine
+
+to Gemfile
+
+    gem 'manage'
+
+
+to routes.rb yourapp/config/routes.rb:
+
+    mount Manage::Engine, at: "/manage"
+
+== Defining resource for administration
+
+
+Add the resource to your app routes.rb yourapp/config/routes.rb:
+
+    Manage::Engine.routes.draw do
+      resources :cities
+    end
+
+
+Create controller in your application yourapp/app/controllers/manage/cities_controller.rb
+
+    class Manage::CitiesController < Manage::ResourceController
+    end
+
+
+=== View overriding
+You can overrede the views in
+
+app/views/manage/countries
+
+* _index.html.slim
+* _form.html_slim
+* edit.html.slim
+* new.html.slim
+* show.html.slim
+
+
+
+
+== Authorization
+In your app do
+
+    rails generate devise AdminUser
+
+    delete "devise_for :admin_users" from routes.rb
+
+    AdminUser.create(email: 'admin@example.com', password: '11223344', password_confirmation: '11223344')
+
+==
+
+This project rocks and uses MIT license

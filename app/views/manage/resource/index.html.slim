@@ -1,0 +1,6 @@
+nav
+  = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize]
+
+= render "index", attributes: attributes
+
+= paginate collection
