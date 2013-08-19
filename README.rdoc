@@ -52,8 +52,13 @@ In your app do
 
     delete "devise_for :admin_users" from routes.rb
 
+
+Create an admin user. The users benefit from the devise password validation/generation but doesn't use the devise controllers.
+
+
     AdminUser.create(email: 'admin@example.com', password: '11223344', password_confirmation: '11223344')
 
-==
+
+== License
 
 This project rocks and uses MIT license
