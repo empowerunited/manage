@@ -1,6 +1,8 @@
 = Manage
 
-Admin backend based on http://iain.nl/backends-in-rails-3-1
+Admin backend started from http://iain.nl/backends-in-rails-3-1
+
+Based on inherit_resources, slim, kaminari
 
 == Installing
 
@@ -28,6 +30,7 @@ Add the resource to your app routes.rb yourapp/config/routes.rb:
 Create controller in your application yourapp/app/controllers/manage/cities_controller.rb
 
     class Manage::CitiesController < Manage::ResourceController
+        @@per_page = 10 # optional
     end
 
 
