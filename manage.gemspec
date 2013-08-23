@@ -8,7 +8,8 @@ Gem::Specification.new do |s|
   s.name        = "manage"
   s.version     = Manage::VERSION
   s.authors     = ["Empower United", "Gudata"]
-  s.email       = ["i.bardarov@gmail.com"]
+  s.email       = ['devteam@empowerunited.com']
+  s.license     = "MIT"
   s.homepage    = "https://github.com/empowerunited/manage"
   s.summary     = "Empower Unitited Manage Backend"
   s.description = "Rails backend"
