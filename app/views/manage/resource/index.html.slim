@@ -1,6 +1,12 @@
 nav
-  = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize]
+  = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize], class: 'button small secondary'
 
-= render "index", attributes: attributes
+= render "manage/resource/index/scopes"
+
+.row
+  .columns.large-9
+    = render "manage/resource/index/table", attributes: attributes
+  .columns.large-3
+    = render "manage/resource/index/filters"
 
 = paginate collection

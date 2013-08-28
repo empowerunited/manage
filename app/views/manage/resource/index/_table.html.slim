@@ -1,0 +1,16 @@
+table
+  thead
+    tr
+      - attributes.each do |attr|
+        th= resource_class.human_attribute_name(attr)
+      th = t('.actions')
+  tbody
+    - collection.each do |resource|
+      tr
+        - attributes.each do |attr|
+          td = resource.public_send(attr).to_s
+        td
+          ul.inline-list
+            li = link_to t('manage.actions.show'), [resource]
+            li = link_to t('manage.actions.edit'), [:edit, resource]
+            li = link_to t('manage.actions.destroy'), [resource], method: :delete, data: { confirm: t('manage.confirmations.Are you sure')}

@@ -1,0 +1,38 @@
+.main {
+  margin: 0 10px;
+}
+
+.row {
+  width: auto;
+  max-width: none;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 0;
+}
+.row .columns, .row .row .columns {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table {
+  width: 100%;
+
+  ul.inline-list {
+    margin-bottom: 0;
+    line-height: inherit;
+  }
+}
+
+.pagination li.active {
+  @extend .current;
+}
+
+body.index {
+  .panel {
+    padding: 0 10px;
+  }
+
+  fieldset {
+    margin: 0;
+  }
+}

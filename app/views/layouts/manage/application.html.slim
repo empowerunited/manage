@@ -5,26 +5,33 @@ html
     title Manage
     = stylesheet_link_tag    "manage/application", media: "all"
     = javascript_include_tag "vendor/custom.modernizr"
-    = javascript_include_tag "manage/application"
     = csrf_meta_tags
 
 body class="#{controller.action_name} #{controller_path.gsub(/[-\/]/, '-')} simple" data-locale=I18n.locale
-  header
-    = current_user.email
-    = render '/layouts/manage/main_menu'
-  row
+  nav.top-bar data-options="is_hover:false"
+    ul.title-area
+      li.name
+        h1
+          a href="/manage" Manage
+      li.toggle-topbar.menu-icon
+        a href="#"
+          span Menu
+    section.top-bar-section
+      = render '/layouts/manage/main_menu'
+
+  section.main
     #flash
       - flash.each do |key, value|
         - key = 'info' if key == :notice
-        .alert_wrapper data-dismiss="alert"
-          div(class="alert alert-#{key} #{key}")
-            button(type="button" class="close" data-dismiss="alert") &times;
-            - if value.is_a?(Array)
-              - value.each do |element|
-                p #{element.html_safe}
-            - else
-              p #{value.html_safe}
-          .clearfix
+        - key = 'alert' if key == :error
+        div data-alert="" class="alert-box #{key}"
+          - if value.is_a?(Array)
+            - value.each do |element|
+              p #{element.html_safe}
+          - else
+            p #{value.html_safe}
+          a.close href="#" &times;
 
+    = yield
 
-  = yield
+  = javascript_include_tag "manage/application"

@@ -12,6 +12,12 @@ bg:
       title: Създаване на %{model}
     confirmations:
       Are you sure: Шуре ли сте?
+
+    # Pages
+    resource:
+      index:
+        actions: 'Действия'
+
   flash:
     actions:
       create:

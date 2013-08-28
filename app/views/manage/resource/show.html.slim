@@ -1,11 +1,10 @@
 nav
-  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class
-  = link_to t('manage.actions.edit'), resource.class
+  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class, class: 'button small secondary'
+  | &nbsp;
+  = link_to t('manage.actions.edit'), [:edit, resource], class: 'button small'
 
 article
   dl
     - resource_class.attribute_names.each do |attr|
       dt= resource_class.human_attribute_name(attr)
       dd= resource.public_send(attr)
-
-

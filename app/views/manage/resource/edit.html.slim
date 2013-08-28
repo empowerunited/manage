@@ -2,6 +2,9 @@ h2 = t('manage.edit.title', model: resource_class.model_name.human)
 
 nav
   / = link_to 'index', collection_url
-  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class
+  / | &nbsp;
+  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class, class: 'button small secondary'
 
-= render "form", attributes: attributes
+.row
+  .columns.large-6
+    = render "form", attributes: attributes
