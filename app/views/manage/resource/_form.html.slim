@@ -1,4 +1,4 @@
 = manage_form_for [ resource ] do |f|
-  - attributes.each do |attr|
+  - edit_attributes.each do |attr|
     = f.input attr
   = f.submit class: 'button small'

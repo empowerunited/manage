@@ -2,13 +2,13 @@ table
   thead
     tr
       - attributes.each do |attr|
-        th= resource_class.human_attribute_name(attr)
+        th = attribute_header(resource_class, attr)
       th = t('.actions')
   tbody
     - collection.each do |resource|
       tr
         - attributes.each do |attr|
-          td = resource.public_send(attr).to_s
+          td = attribute_value(resource, attr)
         td
           ul.inline-list
             li = link_to t('manage.actions.show'), [resource]
