@@ -1,19 +1,12 @@
 class Manage::ApplicationController < ActionController::Base
-  # before_filter :authenticate_admin_user!
-  before_filter :authenticate_admin
+  before_filter :auth_user!
 
-  def authenticate_admin
-    authenticate_or_request_with_http_basic do |username, password|
-      @current_user = AdminUser.where(email: username).first
-      return request_http_basic_authentication if @current_user.blank?
-      return request_http_basic_authentication unless @current_user.valid_password?(password)
-      @current_user
-    end
+  def auth_user!
+    redirect_to new_admin_user_session_path unless admin_user_signed_in?
   end
 
-  helper_method :current_user
   def current_user
-    @current_user
+    current_admin_user
   end
 
 end

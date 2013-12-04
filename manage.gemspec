@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency "uglifier", ">= 1.3.0"
   s.add_dependency "compass-rails" # foundation needs this otherwise throws an error
   s.add_dependency "zurb-foundation", "~> 4.0.0"
+  s.add_dependency "devise", "~> 3.1.0"
 
   s.add_development_dependency "sqlite3"
 end
