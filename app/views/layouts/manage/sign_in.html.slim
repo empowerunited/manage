@@ -17,7 +17,7 @@ body class="simple" data-locale=I18n.locale
           - if value.is_a?(Array)
             - value.each do |element|
               p #{element.html_safe}
-          - else
+          - elsif value.is_a?(String)
             p #{value.html_safe}
           a.close href="#" &times;
 
