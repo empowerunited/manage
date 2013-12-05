@@ -5,4 +5,6 @@ Manage::Engine.routes.draw do
 
   resources :dashboards
   resources :admin_users
+
+  root 'dashboards#index'
 end

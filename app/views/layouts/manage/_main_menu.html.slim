@@ -4,13 +4,9 @@ ul.right
   li.divider.hide-for-small
   li = link_to current_user.email, current_user
   li.divider.hide-for-small
-  li = link_to City.model_name.human(count: 2), manage.cities_path
-  li.divider.hide-for-small
   li = link_to 'users', users_path
   li.divider.hide-for-small
   li = link_to AdminUser.model_name.human(count:2), admin_users_path
-  li.divider.hide-for-small
-  li = link_to 'terms', main_app.about_us_pages_path
   li.divider.hide-for-small
   li.has-dropdown
     a href="#" Main Item 1
