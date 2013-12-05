@@ -12,7 +12,19 @@ class Manage::ResourceController < Manage::ApplicationController
 
   respond_to :html
 
-  helper_method :list_index_fields, :list_edit_fields
+  helper_method :list_index_fields, :list_edit_fields, :list_search_fields
+
+  def end_of_association_chain
+    if self.resources_configuration[:self][:search_fields].blank?
+      self.class.search_fields :all
+    end
+
+    config = self.resources_configuration[:self]
+    search_type_name = (config[:instance_name].to_s + '_search').to_sym
+    @search = config[search_type_name].new(params[:f])
+
+    @search.results 
+  end
 
   protected
   def collection
@@ -32,12 +44,56 @@ class Manage::ResourceController < Manage::ApplicationController
     setup_fields(:edit_fields, *fields)
   end
 
+  def self.search_fields(*fields)
+    setup_fields(:search_fields, *fields)
+
+    config = self.resources_configuration[:self]
+    search_type_name = (config[:instance_name].to_s + '_search').to_sym
+    config[search_type_name] = Class.new do
+      include SearchObject.module(:model, :sorting)
+
+      def escape_search_term(term)
+        "%#{term.gsub(/\s+/, '%')}%"
+      end
+
+      def parse_date(date)
+        Date.strptime(date, '%Y-%m-%d') rescue nil
+      end
+
+    end
+    config[search_type_name].scope { resource_class.all }
+
+    Object.const_set("#{'Bla'.to_s}", config[search_type_name])
+
+    config[:search_fields].select {|f| not f.to_s.include?('.')}.each do |field|
+      field_type = resource_class.columns_hash[field.to_s].type
+      if field_type == :text or field_type == :string
+        config[search_type_name].option field.to_sym do |scope, value|
+          scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
+        end
+      elsif field_type == :datetime
+        config[search_type_name].option field.to_sym do |scope, value|
+          date = parse_date value
+          scope.where("DATE(#{field.to_s}) >= ?", date) if date.present?
+        end
+      else
+        config[search_type_name].option field.to_sym do |scope, value|
+          scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
+        end
+      end
+    end
+  end
+
   def list_index_fields
     list_fields(:index_fields)
   end
 
   def list_edit_fields
     list_fields(:edit_fields)
+  end
+
+  def list_search_fields
+    list_fields(:search_fields)
   end
 
   private

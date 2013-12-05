@@ -1,6 +1,19 @@
 nav
   = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize], class: 'button small secondary'
 
+= manage_form_for @search, as: :f, method: :get, url: "#{resource_class.name.underscore.pluralize}", html: {id: 'search-form'} do |f|
+  fieldset
+    legend Search
+    ul.small-block-grid-6
+      - list_search_fields.each do |field|
+        - if resource_class.columns_hash[field.to_s].type == :datetime
+          li
+            = f.date_field field.to_sym
+        - else
+          li
+            = f.search_field field.to_sym, placeholder: field.to_s.capitalize
+      li
+        = f.submit 'Search', class: 'button small'
 = render "manage/resource/index/scopes"
 
 .row
