@@ -1,6 +1,6 @@
 module Manage
   module Fields
-    class Filter
+    class Reader
       class << self
         def field_value(scope, field_data)
           current_field, rest_field_parts, custom_query, custom_format = _parse_field_data(field_data)

@@ -13,11 +13,11 @@ module Manage
     end
 
     def field_value(scope, field_data)
-      Fields::Filter.field_value(scope, field_data)
+      Fields::Reader.field_value(scope, field_data)
     end
 
     def field_title(resource_class, field_data)
-      Fields::Filter.field_title(resource_class, field_data)
+      Fields::Reader.field_title(resource_class, field_data)
     end
 
   end

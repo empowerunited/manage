@@ -1,5 +1,5 @@
 module Manage
   module Fields
-    autoload :Filter, 'manage/fields/filter'
+    autoload :Reader, 'manage/fields/reader'
   end
 end
