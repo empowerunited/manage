@@ -1,11 +1,22 @@
-form
+= manage_form_for @search, as: :f, method: :get, url: "#{resource_class.name.underscore.pluralize}", html: {id: 'search-form'} do |f|
   fieldset
     legend Filter
+    - list_search_fields.each do |field|
+      .row
+        .columns.large-12
+          - label_text = resource_class.human_attribute_name(field)
+          - if resource_class.columns_hash[field.to_s].blank?
+            label #{label_text}
+            = f.search_field field.to_sym, placeholder: label_text
+          - elsif resource_class.columns_hash[field.to_s].type == :datetime
+            label #{label_text}
+            = f.date_field field.to_sym, placeholder: label_text
+          - elsif resource_class.columns_hash[field.to_s].type == :integer
+            label #{label_text}
+            = f.number_field field.to_sym, placeholder: label_text
+          - else
+            label #{label_text}
+            = f.search_field field.to_sym, placeholder: label_text
     .row
       .columns.large-12
-        label Name
-        input type="text" placeholder="Name"
-    .row
-      .columns.large-12
-        label City
-        input type="text" placeholder="City"
+        = f.submit 'Search', class: 'button small'

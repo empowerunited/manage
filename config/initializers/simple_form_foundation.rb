@@ -14,4 +14,6 @@ SimpleForm.setup do |config|
     # does't provide styles for hints. You will need to provide your own CSS styles for hints.
     # b.use :hint,  wrap_with: { tag: :span, class: :hint }
   end
+
+  config.form_class = 'simple_form custom'
 end

@@ -5,8 +5,9 @@ nav
 
 .row
   .columns.large-9
-    = render "manage/resource/index/table", attributes: attributes
+    = render "manage/resource/index/table", index_fields: index_fields
   .columns.large-3
     = render "manage/resource/index/filters"
 
 = paginate collection
+= render "manage/resource/index/count"

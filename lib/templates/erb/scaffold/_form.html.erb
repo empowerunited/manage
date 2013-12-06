@@ -2,7 +2,7 @@
   <%%= f.error_notification %>
 
   <div class="form-inputs">
-  <%- attributes.each do |attribute| -%>
+  <%- edit_attributes.each do |attribute| -%>
     <%%= f.<%= attribute.reference? ? :association : :input %> :<%= attribute.name %> %>
   <%- end -%>
   </div>
