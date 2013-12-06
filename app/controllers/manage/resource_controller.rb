@@ -12,7 +12,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   respond_to :html
 
-  helper_method :list_index_fields, :list_edit_fields, :list_search_fields
+  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links
 
   def end_of_association_chain
     if self.resources_configuration[:self][:search_fields].blank?
@@ -47,41 +47,11 @@ class Manage::ResourceController < Manage::ApplicationController
     setup_fields(:search_fields, *fields)
 
     config = self.resources_configuration[:self]
-    config[:search] = Class.new do
-      include SearchObject.module(:model, :sorting)
+    config[:search] = Manage::Fields::Searcher.generate_search_object(resource_class, config[:search_fields])
+  end
 
-      def escape_search_term(term)
-        "%#{term.gsub(/\s+/, '%')}%"
-      end
-
-      def parse_date(date)
-        Date.strptime(date, '%Y-%m-%d') rescue nil
-      end
-
-    end
-    config[:search].scope { resource_class.all }
-
-    Object.const_set("#{'Bla'.to_s}", config[:search])
-
-    config[:search_fields].select {|f| not f.to_s.include?('.')}.each do |field|
-      field_type = resource_class.columns_hash[field.to_s].type
-      if field_type == :text or field_type == :string
-        config[:search].option field.to_sym do |scope, value|
-          scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
-        end
-      elsif field_type == :datetime
-        config[:search].option field.to_sym do |scope, value|
-          date = parse_date value
-          scope.where("DATE(#{field.to_s}) >= ?", date) if date.present?
-        end
-      elsif field_type == :integer
-        config[:search].option field.to_sym
-      else
-        config[:search].option field.to_sym do |scope, value|
-          scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
-        end
-      end
-    end
+  def self.action_links(*fields)
+    setup_fields(:action_links, *fields)
   end
 
   def list_index_fields
@@ -96,10 +66,18 @@ class Manage::ResourceController < Manage::ApplicationController
     list_fields(:search_fields)
   end
 
+  def list_action_links
+    if self.resources_configuration[:self][:action_links].blank?
+      []
+    else
+      self.resources_configuration[:self][:action_links]
+    end
+  end
+
   private
   def self.setup_fields(key, *fields)
     # :all means all the fields - default
-    if fields.first.to_sym == :all
+    if not fields.first.is_a?(Hash) and fields.first.to_sym == :all
       options = fields.extract_options!
       options[:except] ||= []
       options[:include] ||= []

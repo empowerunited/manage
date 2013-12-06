@@ -13,7 +13,7 @@ module Manage
               ("<a href=\"#{current_field}/#{entity.id}\">#{custom_format.present? ? custom_format.call(entity) : entity.id }</a>")
             end.join(', ').html_safe
           else
-            rest_field_parts.empty? ? value.to_s : field_value(value, rest_field_parts.join('.'))
+            rest_field_parts.empty? ? value : field_value(value, rest_field_parts.join('.'))
           end
         end
 

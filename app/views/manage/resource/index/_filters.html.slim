@@ -4,18 +4,19 @@
     - list_search_fields.each do |field|
       .row
         .columns.large-12
+          - label_text = resource_class.human_attribute_name(field)
           - if resource_class.columns_hash[field.to_s].blank?
-            label #{field.to_s.capitalize}
-            = f.search_field field.to_sym, placeholder: field.to_s.capitalize
+            label #{label_text}
+            = f.search_field field.to_sym, placeholder: label_text
           - elsif resource_class.columns_hash[field.to_s].type == :datetime
-            label #{field.to_s.capitalize}
-            = f.date_field field.to_sym
+            label #{label_text}
+            = f.date_field field.to_sym, placeholder: label_text
           - elsif resource_class.columns_hash[field.to_s].type == :integer
-            label #{field.to_s.capitalize}
-            = f.number_field field.to_sym
+            label #{label_text}
+            = f.number_field field.to_sym, placeholder: label_text
           - else
-            label #{field.to_s.capitalize}
-            = f.search_field field.to_sym, placeholder: field.to_s.capitalize
+            label #{label_text}
+            = f.search_field field.to_sym, placeholder: label_text
     .row
       .columns.large-12
         = f.submit 'Search', class: 'button small'
