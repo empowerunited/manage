@@ -7,7 +7,7 @@ module Manage
             include SearchObject.module(:model, :sorting)
 
             def escape_search_term(term)
-              "%#{term.gsub(/\s+/, '%')}%"
+              "%#{term.gsub(/\s+/, '%')}%".downcase
             end
 
             def parse_date(date)
@@ -23,7 +23,7 @@ module Manage
             field_type = resource_class.columns_hash[field.to_s].type
             if field_type == :text or field_type == :string
               search_class.option field.to_sym do |scope, value|
-                scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
+                scope.where "lower(#{field.to_s}) LIKE lower(?)", escape_search_term(value)
               end
             elsif field_type == :datetime
               search_class.option field.to_sym do |scope, value|
@@ -34,7 +34,7 @@ module Manage
               search_class.option field.to_sym
             else
               search_class.option field.to_sym do |scope, value|
-                scope.where "#{field.to_s} LIKE ?", escape_search_term(value)
+                scope.where "lower(#{field.to_s}) LIKE lower(?)", escape_search_term(value)
               end
             end
           end
