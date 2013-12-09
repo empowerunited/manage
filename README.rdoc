@@ -17,6 +17,13 @@ to routes.rb yourapp/config/routes.rb:
 
     mount Manage::Engine, at: "/manage"
 
+
+if you want to have custom design in your app for the manage engine add in application.rb:
+
+    config.assets.precompile += [
+      'manage/custom.css'
+    ]
+
 == Defining resource for administration
 
 
