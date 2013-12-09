@@ -5,6 +5,7 @@ module Manage
 
     OPTIONS = {
       wrapper: :foundation,
+      class: 'custom'
     }
 
     def manage_form_for(record, options={}, &block)
