@@ -1,8 +1,8 @@
 - if content_for? :index_topbar
+  = yield(:index_topbar)
+- else
   nav
     = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize], class: 'button small secondary'
-- else
-  = yield(:index_topbar)
 
 = render "manage/resource/index/scopes"
 
