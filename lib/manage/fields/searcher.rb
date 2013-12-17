@@ -21,20 +21,23 @@ module Manage
 
           search_fields.select {|f| not f.to_s.include?('.')}.each do |field|
             field_type = resource_class.columns_hash[field.to_s].type
-            if field_type == :text or field_type == :string
+            case field_type
+            when *[:text, :string]
               search_class.option field.to_sym do |scope, value|
-                scope.where "lower(#{field.to_s}) LIKE lower(?)", escape_search_term(value)
+                value.blank? ? scope : scope.where("lower(#{field.to_s}) LIKE lower(?)", escape_search_term(value))
               end
-            elsif field_type == :datetime
+            when :datetime
               search_class.option field.to_sym do |scope, value|
                 date = parse_date value
                 scope.where("DATE(#{field.to_s}) >= ?", date) if date.present?
               end
-            elsif field_type == :integer
+            when :integer
+              search_class.option field.to_sym
+            when :boolean
               search_class.option field.to_sym
             else
               search_class.option field.to_sym do |scope, value|
-                scope.where "lower(#{field.to_s}) LIKE lower(?)", escape_search_term(value)
+                scope.where "#{field.to_s} = '?'", escape_search_term(value)
               end
             end
           end
