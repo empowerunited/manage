@@ -20,12 +20,22 @@ class Manage::ResourceController < Manage::ApplicationController
     end
 
     config = self.resources_configuration[:self]
-    @search = config[:search].new(params[:f])
+    @search = config[:search].new(clean_search_params(params[:f]))
 
-    @search.results 
+    @search.results
   end
 
   protected
+
+  def clean_search_params(search_params)
+    return {} unless search_params.is_a?(Hash)
+    search_params = search_params.dup
+    search_params.delete_if do |key, value|
+      value == ''
+    end
+    search_params
+  end
+
   def collection
     assocation = end_of_association_chain.page(params[:page] || 1)
     per_page ? assocation.per(per_page) : assocation
@@ -82,7 +92,7 @@ class Manage::ResourceController < Manage::ApplicationController
       options[:except] ||= []
       options[:include] ||= []
 
-      self.resources_configuration[:self][key] = (resource_class.attribute_names + Array(options[:include])) - Array(options[:except]).map(&:to_s) 
+      self.resources_configuration[:self][key] = (resource_class.attribute_names + Array(options[:include])) - Array(options[:except]).map(&:to_s)
     else
       self.resources_configuration[:self][key] = fields
     end
