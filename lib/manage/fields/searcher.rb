@@ -17,7 +17,7 @@ module Manage
 
 
           search_class.scope { resource_class.all }
-          Object.const_set("#{resource_class.name.gsub(/:/, '_') + 'Searcher'}", search_class)
+          Object.const_set("#{resource_class.name.gsub(/:/, '')}Searcher", search_class)
 
           search_fields.select {|f| not f.to_s.include?('.')}.each do |field|
             field_type = resource_class.columns_hash[field.to_s].type
