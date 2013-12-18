@@ -41,7 +41,9 @@ module Manage
 
       if link_data.is_a? (Symbol) or link_data.is_a?(String)
         relation = link_data.to_s
-        if scope.class.reflect_on_association(link_data.to_sym).options[:class_name].present?
+        assocation = scope.class.reflect_on_association(link_data.to_sym)
+        raise "assocation #{link_data} not found on #{scope.class}" unless assocation
+        if assocation.options[:class_name].present?
           rel_name = scope.class.reflect_on_association(link_data.to_sym).options[:class_name]
           relation = rel_name.downcase.dasherize.pluralize
         end
