@@ -16,3 +16,4 @@ table
             li = link_to t('manage.actions.destroy'), [resource], method: :delete, data: { confirm: t('manage.confirmations.Are you sure')}
             - list_action_links.each do |link_data|
               li = action_link(resource, link_data)
+            = resource_actions(resource)

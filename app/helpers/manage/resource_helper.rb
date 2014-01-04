@@ -20,10 +20,25 @@ module Manage
       Fields::Reader.field_title(resource_class, field_data)
     end
 
+
+    #
+    # to customise the actions for a resource define a list of actions
+    #
+    # example:
+    #   action_links  :posts, :tickets, ->(resource) {link_to "#{resource.name}"}
+    #
+    # @param  scope [type] [description]
+    # @param  link_data [type] [description]
+    #
+    # @return [type] [description]
     def action_link(scope, link_data)
       value = nil
+      case link_data
 
-      if link_data.is_a? (Hash)
+      when Proc
+        value = link_data.call(scope)
+
+      when Hash
         relation = link_data.keys.first
         entity = Fields::Reader.field_value(scope, relation)
         unless entity.present?
@@ -37,9 +52,8 @@ module Manage
 
         path = entity.class.name.dasherize.pluralize.downcase
         return  link_to value, [scope.public_send(relation)]
-      end
 
-      if link_data.is_a? (Symbol) or link_data.is_a?(String)
+      when *[Symbol, String]
         relation = link_data.to_s
         assocation = scope.class.reflect_on_association(link_data.to_sym)
         raise "assocation #{link_data} not found on #{scope.class}" unless assocation
@@ -53,9 +67,7 @@ module Manage
           key = scope.class.name.downcase.dasherize + '_id'
         end
         return "<a href=\"#{relation}?f%5B#{key}%5D=#{scope.id}\">#{resource_class.human_attribute_name(link_data.to_s)}</a>".html_safe
-      end
-
-      unless value
+      else
         raise 'Unsupported link data'
       end
 

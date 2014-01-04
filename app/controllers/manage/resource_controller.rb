@@ -12,7 +12,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   respond_to :html
 
-  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links
+  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions
 
   def end_of_association_chain
     if self.resources_configuration[:self][:search_fields].blank?
@@ -82,6 +82,15 @@ class Manage::ResourceController < Manage::ApplicationController
     else
       self.resources_configuration[:self][:action_links]
     end
+  end
+
+  #
+  # This doubles the list_action_links.
+  # It provides actions on existing resource.
+  # actions are used in index/show/edit screens
+  # returns html string
+  def resource_actions resource
+    nil
   end
 
   private

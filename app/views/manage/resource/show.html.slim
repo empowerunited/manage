@@ -1,7 +1,8 @@
 nav
-  = link_to t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class, class: 'button small secondary'
-  | &nbsp;
-  = link_to t('manage.actions.edit'), [:edit, resource], class: 'button small'
+  = [ link_to(t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class, class: 'button small secondary'),
+      link_to(t('manage.actions.edit'), [:edit, resource], class: 'button small'),
+      resource_actions(resource),
+    ].compact.join('&nbsp;'.html_safe)
 
 article
   dl
