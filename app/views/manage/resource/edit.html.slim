@@ -4,7 +4,7 @@ nav
   / = link_to 'index', collection_url
   = [ link_to(t('manage.actions.index', model: resource_class.model_name.human(count: 2)), resource.class, class: 'button small secondary'),
       resource_actions(resource),
-      ].compact.join('&nbsp;'.html_safe)
+      ].compact.join('&nbsp;').html_safe
 
 .row
   .columns.large-6
