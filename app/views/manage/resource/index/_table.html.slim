@@ -1,12 +1,18 @@
 table
   thead
     tr
+      - if collection_actions(collection)
+        th = check_box_tag 'select_all', '1', false, class: 'check_all'
+
       - index_fields.each do |field_data|
         th = field_title(resource_class, field_data)
       th = t('.actions')
   tbody
     - collection.each do |resource|
       tr
+        - if collection_actions(collection)
+          td = check_box_tag "selected_ids[]", resource.id, false, class: 'check_all'
+
         - index_fields.each do |field_data|
           td = field_value(resource, field_data)
         td

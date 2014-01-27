@@ -12,7 +12,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   respond_to :html
 
-  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions
+  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions, :collection_actions
 
   def end_of_association_chain
     if self.resources_configuration[:self][:search_fields].blank?
@@ -90,6 +90,13 @@ class Manage::ResourceController < Manage::ApplicationController
   # actions are used in index/show/edit screens
   # returns html string
   def resource_actions resource
+    nil
+  end
+
+  # This method provides links on which to submit all collection / selected items
+  # Example:
+  #
+  def collection_actions resource
     nil
   end
 

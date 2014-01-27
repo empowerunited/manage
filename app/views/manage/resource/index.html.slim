@@ -4,13 +4,15 @@
   nav
     = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize], class: 'button small secondary'
 
-= render "manage/resource/index/scopes"
+= render 'manage/resource/index/scopes'
+
 
 .row
   .columns.large-9
-    = render "manage/resource/index/table", index_fields: index_fields
+    = render 'manage/resource/index/table', index_fields: index_fields
   .columns.large-3
-    = render "manage/resource/index/filters"
+    = render 'manage/resource/index/filters'
 
 = paginate collection
-= render "manage/resource/index/count"
+= render 'manage/resource/index/collection_actions', collection: collection
+= render 'manage/resource/index/count'

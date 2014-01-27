@@ -37,7 +37,23 @@ Add the resource to your app routes.rb yourapp/config/routes.rb:
 Create controller in your application yourapp/app/controllers/manage/cities_controller.rb
 
     class Manage::CitiesController < Manage::ResourceController
-        @@per_page = 10 # optional
+      @@per_page = 10 # optional
+
+      # optional
+      def collection_actions collection
+        [
+          view_context.link_to(t('manage.views.winners.export_as_bank_file'), [:export_as_bank_file, resource_class], method: :post, class: 'button')
+        ].join('').html_safe
+      end
+
+      # optional
+      def resource_actions resource
+        [
+          '',
+          view_context.link_to('Login as', login_as_user_path(resource.id)),
+        ].join('&nbsp;'.html_safe).html_safe
+      end
+
     end
 
 
