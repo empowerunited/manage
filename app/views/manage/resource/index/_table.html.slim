@@ -11,7 +11,7 @@ table
     - collection.each do |resource|
       tr
         - if collection_actions(collection)
-          td = check_box_tag "selected_ids[]", resource.id, false, class: 'check_all'
+          td = check_box_tag "selected_ids[]", resource.id, false, class: 'rs'
 
         - index_fields.each do |field_data|
           td = field_value(resource, field_data)
