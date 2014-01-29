@@ -42,7 +42,7 @@ Create controller in your application yourapp/app/controllers/manage/cities_cont
       # optional
       def collection_actions collection
         [
-          view_context.link_to(t('manage.views.winners.export_as_bank_file'), [:export_as_bank_file, resource_class], method: :post, class: 'button')
+          view_context.button_to(t('manage.views.winners.export_as_bank_file'), [:export_as_bank_file, resource_class], method: :post, data: {handler: 'CollectionActions'}, class: 'button')
         ].join('').html_safe
       end
 

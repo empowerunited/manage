@@ -2,27 +2,29 @@ class CollectionActions
   constructor: (el) ->
     $el  = $(el)
 
-    $el.on 'click', 'a', (e) ->
+    $form = $el.closest('form')
+
+    $el.on 'click', (e) ->
       e.stopPropagation()
       e.preventDefault()
 
-      url = $(@).attr('href')
-      requestType = $(@).data('method')
-
-      # TODO : fetch search form params
-      dataParams =  []
-      $('.rs:checked').each ->
-        dataParams.push($(@).attr('value'))
-
-      if dataParams.length == 0
-        alert 'Няма направвен избор'
+      checkedCheckboxes = $('.rs:checked')
+      unless checkedCheckboxes.length
+        alert 'Select Items'
         return false
 
-      $.ajax(
-        url: url
-        type: requestType
-        data: { selected_ids: dataParams }
-      ).fail ->
-        alert('Възникна грешка')
+      # clear all hidden fields with class .hidden_selected_ids
+      $form.find('input[type="hidden"]').remove()
+
+      checkedCheckboxes.each ->
+        # create a new hidden
+        hidden_input = $('<input>').attr({
+          type: 'hidden',
+          name: 'selected_ids[]',
+          value: $(@).val()
+        }).appendTo($form)
+
+      $form.submit()
+
 
 Handlers.register 'CollectionActions', CollectionActions
