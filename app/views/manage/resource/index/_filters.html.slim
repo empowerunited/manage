@@ -10,7 +10,7 @@
             = f.search_field field.to_sym, placeholder: label_text
           - elsif resource_class.columns_hash[field.to_s].type == :datetime
             label #{label_text}
-            = f.date_field field.to_sym, placeholder: label_text
+            = f.date_field field.to_sym, placeholder: label_text, value: (f.object.params[field.to_s] ? Date.parse(f.object.params[field.to_s]) : nil)
           - elsif resource_class.columns_hash[field.to_s].type == :integer
             label #{label_text}
             = f.number_field field.to_sym, placeholder: label_text

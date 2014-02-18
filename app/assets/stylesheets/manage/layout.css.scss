@@ -17,6 +17,11 @@
 table {
   width: 100%;
 
+  td {
+    max-width: 700px;
+    word-break: break-word;
+  }
+
   ul.inline-list {
     margin-bottom: 0;
     line-height: inherit;
