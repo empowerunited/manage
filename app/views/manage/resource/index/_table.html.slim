@@ -17,9 +17,10 @@ table
           td = field_value(resource, field_data)
         td
           ul.inline-list
-            li = link_to t('manage.actions.show'), [resource]
-            li = link_to t('manage.actions.edit'), [:edit, resource]
-            li = link_to t('manage.actions.destroy'), [resource], method: :delete, data: { confirm: t('manage.confirmations.Are you sure')}
+            - if default_actions?
+              li = link_to t('manage.actions.show'), [resource]
+              li = link_to t('manage.actions.edit'), [:edit, resource]
+              li = link_to t('manage.actions.destroy'), [resource], method: :delete, data: { confirm: t('manage.confirmations.Are you sure')}
             - list_action_links.each do |link_data|
               li = action_link(resource, link_data)
             = resource_actions(resource)

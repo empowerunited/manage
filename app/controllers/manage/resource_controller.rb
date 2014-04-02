@@ -12,7 +12,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   respond_to :html
 
-  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions, :collection_actions
+  helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions, :collection_actions, :'default_actions?'
 
   def end_of_association_chain
     if self.resources_configuration[:self][:search_fields].blank?
@@ -91,6 +91,11 @@ class Manage::ResourceController < Manage::ApplicationController
     else
       self.resources_configuration[:self][:action_links]
     end
+  end
+
+  # Don't display the show, edit, delete in the index view
+  def default_actions?
+    true
   end
 
   #
