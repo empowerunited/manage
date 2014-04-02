@@ -42,7 +42,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   def collection
     filtered_collection = end_of_association_chain
-    if @@collection_scope
+    if defined?(@@collection_scope) and @@collection_scope.present?
       filtered_collection = @@collection_scope.call(filtered_collection)
     end
 
