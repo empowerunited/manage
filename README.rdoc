@@ -30,6 +30,13 @@ if you want to have custom design in your app for the manage engine add in appli
 Add the resource to your app routes.rb yourapp/config/routes.rb:
 
     Manage::Engine.routes.draw do
+      concern :backend_manageable do
+        collection do
+          get :show_help, concerns: :backend_manageable
+        end
+      end
+
+
       resources :cities
     end
 

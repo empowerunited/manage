@@ -3,7 +3,6 @@ require_dependency 'kaminari'
 
 class Manage::ResourceController < Manage::ApplicationController
   inherit_resources
-
   cattr_accessor :per_page
 
   self.responder = Manage::Responder
@@ -23,6 +22,9 @@ class Manage::ResourceController < Manage::ApplicationController
     @search = config[:search].new(clean_search_params(params[:f]))
 
     @search.results
+  end
+
+  def show_help
   end
 
   protected

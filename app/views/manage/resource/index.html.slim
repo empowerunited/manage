@@ -6,12 +6,14 @@
 
 = render 'manage/resource/index/scopes'
 
-
 .row
   .columns.large-9
     = render 'manage/resource/index/table', index_fields: index_fields
   .columns.large-3
     = render 'manage/resource/index/filters'
+
+    .right
+      = link_to('Help', [:show_help, resource_class.name.tableize]) rescue ''
 
 = paginate collection
 = render 'manage/resource/index/collection_actions', collection: collection
