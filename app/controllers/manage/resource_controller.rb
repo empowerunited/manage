@@ -36,8 +36,17 @@ class Manage::ResourceController < Manage::ApplicationController
     search_params
   end
 
+  def self.collection_scope lambda
+    @@collection_scope = lambda
+  end
+
   def collection
-    assocation = end_of_association_chain.page(params[:page] || 1)
+    filtered_collection = end_of_association_chain
+    if @@collection_scope
+      filtered_collection = @@collection_scope.call(filtered_collection)
+    end
+
+    assocation = filtered_collection.page(params[:page] || 1)
     per_page ? assocation.per(per_page) : assocation
   end
 
