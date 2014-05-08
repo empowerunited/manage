@@ -24,6 +24,18 @@ class Manage::ResourceController < Manage::ApplicationController
     @search.results
   end
 
+  def create
+    create!(:notice => "New #{resource_class} created!") do |format|
+      format.html { redirect_to action: :index }
+    end
+  end
+
+  def update
+    update!(:notice => "#{resource_class} updated!") do |format|
+      format.html { redirect_to action: :index }
+    end
+  end
+
   def show_help
   end
 
