@@ -39,13 +39,13 @@ class Manage::ResourceController < Manage::ApplicationController
   end
 
   def self.collection_scope lambda
-    @@collection_scope = lambda
+    self.class_variable_set(:"@@collection_scope", lambda)
   end
 
   def collection
     filtered_collection = end_of_association_chain
-    if defined?(@@collection_scope) and @@collection_scope.present?
-      filtered_collection = @@collection_scope.call(filtered_collection)
+    if self.class.class_variable_defined?(:"@@collection_scope") and self.class.class_variable_get(:"@@collection_scope").present?
+      filtered_collection = self.class.class_variable_get(:"@@collection_scope").call(filtered_collection)
     end
 
     assocation = filtered_collection.page(params[:page] || 1)
