@@ -36,6 +36,12 @@ class Manage::ResourceController < Manage::ApplicationController
     end
   end
 
+  def destroy
+    destroy!(:notice => "#{resource_class} deleted!") do |format|
+      format.html { redirect_to action: :index }
+    end
+  end
+
   def show_help
   end
 
