@@ -2,7 +2,7 @@ table
   thead
     tr
       - if collection_actions(collection)
-        th = check_box_tag 'select_all', '1', false, class: 'check_all'
+        th = check_box_tag 'select_all', '1', false, class: 'check_all', data: { handler: 'TableCheckboxes' }
 
       - index_fields.each do |field_data|
         th = field_title(resource_class, field_data)
