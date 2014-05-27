@@ -4,7 +4,7 @@ module Manage
       class << self
         def field_value(scope, field_data)
           current_field, rest_field_parts, custom_query, custom_format = _parse_field_data(field_data)
-          value = scope.public_send(current_field)
+          value = scope.respond_to?(current_field) ? scope.public_send(current_field) : "missing index field '#{current_field}'"
 
           if _is_field_relation?(value)
             value = custom_query.present? ? custom_query.call(value) : value
