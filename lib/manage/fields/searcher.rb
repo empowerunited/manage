@@ -7,7 +7,7 @@ module Manage
             include SearchObject.module(:model, :sorting)
 
             def escape_search_term(term)
-              "%#{term.gsub(/\s+/, '%')}%".downcase
+              "%#{term.gsub(/\s+/, '%').gsub('.', '_')}%".downcase
             end
 
             def parse_date(date)
