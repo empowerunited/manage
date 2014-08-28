@@ -15,7 +15,10 @@ body class="#{controller.action_name} #{controller_path.gsub(/[-\/]/, '-')} simp
     ul.title-area
       li.name
         h1
-          a href="/manage" Manage
+          = link_to root_url do
+            = image_tag('manage/logo.png')
+            = 'anage'
+
       li.toggle-topbar.menu-icon
         a href="#"
           span Menu

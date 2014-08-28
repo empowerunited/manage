@@ -91,6 +91,9 @@ Create an admin user. The users benefit from the devise password validation/gene
 
     AdminUser.create(email: 'admin@example.com', password: '11223344', password_confirmation: '11223344')
 
+= Graphics and art
+
+  Logo designed by Geri - https://dribbble.com/gerystancheva
 
 = TODO
 

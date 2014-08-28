@@ -2,6 +2,12 @@
   margin: 0 10px;
 }
 
+.top-bar {
+  .title-area {
+    li.name img { width: 27px;}
+  }
+}
+
 .row {
   width: auto;
   max-width: none;
