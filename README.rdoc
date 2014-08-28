@@ -1,6 +1,6 @@
 = Manage
 
-logo: http://github.com/empowerunited/manage/blob/master/app/assets/images/manage/logo.png
+http://s27.postimg.org/yugm0734f/logo.png
 
 
 Admin backend started from http://iain.nl/backends-in-rails-3-1
