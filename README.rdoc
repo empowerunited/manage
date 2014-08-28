@@ -1,5 +1,5 @@
 = Manage
-{<img src="http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png" alt="Manage log" />}[http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png]
+{<img src="http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png" />}[http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png]
 
 
 
@@ -100,7 +100,7 @@ Create an admin user. The users benefit from the devise password validation/gene
 
 = Graphics and art
 
-  Logo designed by Geri - http://dribbble.com/gerystancheva
+  Logo designed by Geri http://dribbble.com/gerystancheva
 
 = TODO
 
