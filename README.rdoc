@@ -1,5 +1,7 @@
 = Manage
-http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png
+{<img src="http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png" alt="Manage log" />}[http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png]
+
+
 
 Admin backend started from http://iain.nl/backends-in-rails-3-1
 
