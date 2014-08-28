@@ -7,6 +7,8 @@ Based on inherit_resources, slim, kaminari
 
 No DSLs, no learning curve, only what you know about Ruby on Rails
 
+{<img src="https://badge.fury.io/rb/manage.svg" alt="Gem Version" />}[http://badge.fury.io/rb/manage]
+
 == Installing
 
 Add the engine
