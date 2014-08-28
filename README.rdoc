@@ -1,5 +1,5 @@
 = Manage
-http://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png
+https://raw.githubusercontent.com/empowerunited/manage/master/app/assets/images/manage/logo.png
 
 
 
