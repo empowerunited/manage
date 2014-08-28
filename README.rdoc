@@ -94,10 +94,7 @@ Create an admin user. The users benefit from the devise password validation/gene
 
 = TODO
 
-* Make it work with devise session controllers
-* add filters
-* add search
-* make nice layout
+* Make the scopes/filters work
 
 == License
 
