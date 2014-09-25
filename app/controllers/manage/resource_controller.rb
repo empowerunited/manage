@@ -19,8 +19,7 @@ class Manage::ResourceController < Manage::ApplicationController
     end
 
     config = self.resources_configuration[:self]
-    @search = config[:search].new(clean_search_params(params[:f]))
-
+    @search = config[:search].new(filters: clean_search_params(params[:f]))
     @search.results
   end
 
