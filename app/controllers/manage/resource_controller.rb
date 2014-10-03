@@ -24,15 +24,15 @@ class Manage::ResourceController < Manage::ApplicationController
   end
 
   def created
-    create!(:notice => "New #{resource_class} created!") do |format|
-      format.html { redirect_to action: :index }
+    create!(:notice => "New #{resource_class} created!") do |success, failure|
+      success.html { redirect_to action: :index }
       failure.html { render :action => :edit and return }
     end
   end
 
   def update
-    update!(:notice => "#{resource_class} updated!") do |format|
-      format.html { redirect_to action: :index }
+    update!(:notice => "#{resource_class} updated!") do |success, failure|
+      success.html { redirect_to action: :index }
       failure.html { render :action => :edit and return }
     end
   end
