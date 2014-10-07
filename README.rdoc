@@ -98,6 +98,8 @@ Create an admin user. The users benefit from the devise password validation/gene
 
     AdminUser.create(email: 'admin@example.com', password: '11223344', password_confirmation: '11223344')
 
+[ ![Codeship Status for empowerunited/manage](https://www.codeship.io/projects/1c343f80-3084-0132-3465-0a5d7c3cc23a/status)](https://www.codeship.io/projects/39835)
+
 = Graphics and art
 
 Logo designed by Geri http://dribbble.com/gerystancheva
