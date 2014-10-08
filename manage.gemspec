@@ -23,12 +23,12 @@ Gem::Specification.new do |s|
   s.add_dependency "slim"
   s.add_dependency "slim-rails"
   s.add_dependency "responders"
-  s.add_dependency "sass-rails",   "~> 4.0.0"
-  s.add_dependency "coffee-rails", "~> 4.0.0"
+  s.add_dependency "sass-rails",   ">= 4.0.0"
+  s.add_dependency "coffee-rails", ">= 4.0.0"
   s.add_dependency "uglifier", ">= 1.3.0"
   s.add_dependency "compass-rails" # foundation needs this otherwise throws an error
   s.add_dependency "jquery-rails"
-  s.add_dependency "zurb-foundation", "~> 4.3.2"
+  s.add_dependency "zurb-foundation", ">= 4.3.2"
   s.add_dependency "devise", ">= 3.2.0"
   s.add_dependency "simple_form", '>= 3.0.0'
   s.add_dependency "search_object"
