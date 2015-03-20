@@ -9,6 +9,10 @@ class Manage::ResourceController < Manage::ApplicationController
 
   layout 'manage/application'
 
+  before_filter -> {
+    prepend_view_path File.join(Manage.app_root, "app/views/", controller_path)
+  }
+
   respond_to :html
 
   helper_method :list_index_fields, :list_edit_fields, :list_search_fields, :list_action_links, :resource_actions, :collection_actions, :'default_actions?'
