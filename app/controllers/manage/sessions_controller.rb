@@ -3,7 +3,6 @@ module Manage
     layout "manage/sign_in"
 
     def destroy
-      p 'what?'
       super
     end
   end
