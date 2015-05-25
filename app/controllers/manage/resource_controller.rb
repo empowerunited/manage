@@ -120,7 +120,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   # Don't display the show, edit, delete in the index view
   def default_actions?
-    true
+    instance_variable_defined?(:@default_actions) ? @default_actions : true
   end
 
   #
