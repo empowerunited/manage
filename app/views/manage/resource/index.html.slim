@@ -2,7 +2,7 @@
   = yield(:index_topbar)
 - else
   nav
-    = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new, resource_class.name.tableize.singularize], class: 'button small secondary'
+    = link_to t('manage.actions.new', model: resource_class.model_name.human), [:new,  ActiveModel::Naming.singular_route_key(resource_class)], class: 'button small secondary'
 
 = render 'index/scopes'
 
