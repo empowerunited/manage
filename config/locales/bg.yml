@@ -11,7 +11,7 @@ bg:
     new:
       title: Създаване на %{model}
     confirmations:
-      Are you sure: Шуре ли сте?
+      Are you sure: Сигурно ли сте?
 
     # Pages
     resource:
