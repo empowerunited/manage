@@ -9,7 +9,7 @@ class Manage::ResourceController < Manage::ApplicationController
 
   layout 'manage/application'
 
-  before_filter -> {
+  before_action -> {
     prepend_view_path File.join(Manage.app_root, "app/views/", controller_path)
   }
 
