@@ -27,7 +27,8 @@ class Manage::ResourceController < Manage::ApplicationController
     @search.results
   end
 
-  def created
+  def create
+    raise
     create!(:notice => "New #{resource_class} created!") do |success, failure|
       success.html { redirect_to action: :index }
       failure.html { render :action => :edit and return }
