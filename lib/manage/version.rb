@@ -1,3 +1,3 @@
 module Manage
-  VERSION = "1.3.51"
+  VERSION = "1.3.52"
 end
