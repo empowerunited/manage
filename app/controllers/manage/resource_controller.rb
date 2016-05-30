@@ -53,7 +53,7 @@ class Manage::ResourceController < Manage::ApplicationController
   protected
 
   def clean_search_params(search_params)
-    return {} unless search_params.is_a?(Hash)
+    return {} unless search_params.is_a?(ActionController::Parameters)
     search_params = search_params.dup
     search_params.delete_if do |key, value|
       value == ''
