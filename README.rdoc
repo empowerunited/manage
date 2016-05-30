@@ -5,6 +5,8 @@ http://s27.postimg.org/yugm0734f/logo.png
 
 Admin backend started from http://iain.nl/backends-in-rails-3-1
 
+Works with Rails 5
+
 Based on inherit_resources, slim, kaminari
 
 No DSLs, no learning curve, only what you know about Ruby on Rails
