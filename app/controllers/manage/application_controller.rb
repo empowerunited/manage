@@ -1,6 +1,8 @@
 class Manage::ApplicationController < ActionController::Base
   before_action :auth_user!
 
+  protect_from_forgery with: :exception
+
   def auth_user!
     redirect_to new_admin_user_session_path unless admin_user_signed_in?
   end
